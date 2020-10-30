@@ -10,7 +10,7 @@ import os
 r = redis.StrictRedis(host='localhost', port=6379, db=0)
 BaseRequest.MEMFILE_MAX = 999999999
 
-debug = True
+debug = False
 
 @get("/")
 def index():
