@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titan One'), local('TitanOne'), url(titan-one.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Didact Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(didact-gothic.woff2) format('woff2');
+}
+
+body {
+  background-color: #223;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  padding-top: 20px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+input {
+  font-family: 'Didact Gothic', sans-serif;
+  padding: 10px;
+  font-size: 11pt;
+  border: 0;
+  border-radius: 4px;
+  width: 300px;
+}
+
+#login {
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media(min-width:800px) {
+  body {
+    background-image: url(/static/bg.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+#videocall iframe {
+  border: 0;
+  width: 800px;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  float: left;
+  margin-left: 10%;
+}
+
+#chat iframe {
+  border: 0;
+  width: 400px;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  float: right;
+  margin-right: 10%;
+}
+
+#content {
+  background: #223;
+  border: 0;
+  width: 800px;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+#logout {
+  font-size: 48pt;
+  right: 0;
+  padding: 20px;
+  padding-top: 5px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.fa-lightbulb-o {
+  color: yellow;
+  margin-right: 3px;
+}
+
+#kslogin {
+  background-color: #FE53E1;
+  border: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  height: 36px;
+  letter-spacing: 0;
+  line-height: 36px;
+  overflow: hidden;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .1s ease-in;
+  white-space: nowrap;
+  width: 215px;
+  margin-top: 30px;
+}
+
+.logofont {
+  color: #FE53E0 !important;
+  font-family: 'Titan One', cursive !important;
+  font-size: 36pt;
+  text-align: center;
+}
+
+.logo {
+  vertical-align: middle;
+  height: 90px;
+  margin-top: -11px;
+}

@@ -1,0 +1,2 @@
+authtokens/*.secret
+*.secret
