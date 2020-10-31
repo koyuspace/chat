@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#videocall").html("<iframe src=\"https://meet.jit.si//"+videoCallID+"\" allow=\"camera;microphone\"></iframe>");
+  $("#videocall").html("<iframe src=\"https://meet.jit.si//"+videoCallID+"\" allow=\"camera;microphone;fullscreen\"></iframe>");
   if (location.href.includes("https://chat.koyu.space/chat")) {
     try {
       $.get("/api/v1/login2/"+localStorage.getItem("username")+"/"+localStorage.getItem("uuid")+"/"+localStorage.getItem("instance"), function(data) {
