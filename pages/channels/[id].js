@@ -10,7 +10,6 @@ const ChannelsPage = (props) => {
   const router = useRouter()
   const { user, authLoaded, signOut } = useContext(UserContext)
   const messagesEndRef = useRef(null)
-  document.title = "koyu.space Chat"
 
   // Else load up the page
   const { id: channelId } = router.query

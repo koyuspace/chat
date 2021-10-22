@@ -9,7 +9,6 @@ export default function SupabaseSlackClone({ Component, pageProps }) {
   const [user, setUser] = useState(null)
   const [session, setSession] = useState(null)
   const [userRoles, setUserRoles] = useState([])
-  document.title = "koyu.space Chat"
 
   useEffect(() => {
     const session = supabase.auth.session()
