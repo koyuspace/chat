@@ -1,6 +1,6 @@
 {
-  "name": "supabase-slack-clone-basic",
-  "version": "0.1.1",
+  "name": "koyuspace-chat",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "next",

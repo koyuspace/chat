@@ -34,7 +34,15 @@ The `anon` key is your client-side API key. It allows "anonymous access" to your
 
 **_NOTE_**: The `service_role` key has full access to your data, bypassing any security policies. These keys have to be kept secret and are meant to be used in server environments and never on a client or browser.
 
-### 4. Change authentication settings if necessary
+### 4. Deploy the Next.js client
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fkoyuspace%2Fchat&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_KEY&project-name=koyuspace-chat&repo-name=koyuspace-chat&demo-title=koyu.space%20Chat&demo-description=Official%20koyu.space%20Chat%20application&demo-url=https%3A%2F%2Fchat.koyu.space&demo-image=https%3A%2F%2Fkoyu.space%2Fimg%2Flogo-full.svg)
+
+Here, we recommend forking this repo so you can deploy through Vercel by clicking the button above. When you click the button, replace the repo URL with your fork's URL.
+
+You will be asked for a `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_KEY`. Use the API URL and `anon` key from [step 3](#3-get-the-url-and-key).
+
+### 5. Change authentication settings if necessary
 
 ![Change auth settings](https://user-images.githubusercontent.com/1811651/101840012-39be3800-3af8-11eb-8c32-73f2fae6299e.png)
 

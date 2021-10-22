@@ -1,5 +1,4 @@
 @import '~tailwindcss/dist/base.css';
-@import '~tailwindcss/dist/components.css';
 @import '~tailwindcss/dist/utilities.css';
 
 html,
@@ -11,6 +10,8 @@ body,
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background: #223 !important;
+  color: #fff;
 }
 .channel-list {
   li a:before {
@@ -25,4 +26,49 @@ body,
   overflow: auto;
   display: flex;
   flex-direction: column-reverse;
+  background: #223 !important;
+}
+
+.bg-gray-900 {
+  background: #223 !important;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  background: #fe53e0;
+  color: #fff;
+  font-size: 18px;
+  line-height: inherit;
+  height: auto;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 500;
+  outline: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.text-xs {
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+input {
+  color: #333 !important;
+}
+
+.logo {
+  margin-left: -90px;
+  font-weight: 400;
+  font-size: 24pt;
+  border-left: 1px solid #fff;
+  padding: 20px;
 }

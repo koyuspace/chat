@@ -24,15 +24,16 @@ const Home = () => {
   }
 
   return (
-    <div className="w-full h-full flex justify-center items-center p-4 bg-gray-300">
+    <div className="w-full h-full flex justify-center items-center p-4">
+      <img src="https://koyu.space/img/pb-icon.svg" height="128" alt="Logo" /><span className="logo">Chat</span>
       <div className="w-full sm:w-1/2 xl:w-1/3">
-        <div className="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg bg-white">
+        <div className="border-teal p-8 border-t-12 mb-6">
           <div className="mb-4">
             <label className="font-bold text-grey-darker block mb-2">Email</label>
             <input
               type="text"
               className="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow"
-              placeholder="Your Username"
+              placeholder="Your e-mail"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -55,7 +56,7 @@ const Home = () => {
                 handleLogin('SIGNUP', username, password)
               }}
               href={'/channels'}
-              className="bg-indigo-700 hover:bg-teal text-white py-2 px-4 rounded text-center transition duration-150 hover:bg-indigo-600 hover:text-white"
+              className="btn"
             >
               Sign up
             </a>
@@ -65,7 +66,7 @@ const Home = () => {
                 handleLogin('LOGIN', username, password)
               }}
               href={'/channels'}
-              className="border border-indigo-700 text-indigo-700 py-2 px-4 rounded w-full text-center transition duration-150 hover:bg-indigo-700 hover:text-white"
+              className="btn"
             >
               Login
             </a>

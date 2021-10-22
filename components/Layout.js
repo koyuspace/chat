@@ -19,7 +19,7 @@ export default function Layout(props) {
   }
 
   const newChannel = async () => {
-    const slug = prompt('Please enter your name')
+    const slug = prompt('Please enter a new channel name')
     if (slug) {
       addChannel(slugify(slug), user.id)
     }
@@ -35,7 +35,7 @@ export default function Layout(props) {
         <div className="p-2 ">
           <div className="p-2">
             <button
-              className="bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded w-full transition duration-150"
+              className="btn"
               onClick={() => newChannel()}
             >
               New Channel
@@ -45,7 +45,7 @@ export default function Layout(props) {
           <div className="p-2 flex flex-col space-y-2">
             <h6 className="text-xs">{user?.email}</h6>
             <button
-              className="bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 rounded w-full transition duration-150"
+              className="btn"
               onClick={() => signOut()}
             >
               Log out
