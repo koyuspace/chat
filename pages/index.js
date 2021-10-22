@@ -4,6 +4,7 @@ import { supabase } from 'lib/Store'
 const Home = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  document.title = "koyu.space Chat"
 
   const handleLogin = async (type, username, password) => {
     try {
