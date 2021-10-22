@@ -25,6 +25,8 @@ const Home = () => {
 
   return (
     <div className="w-full h-full flex justify-center items-center p-4">
+      <title>koyu.space Chat</title>
+      <link rel="shortcut icon" href="https://koyu.space/favicon.ico" />
       <img src="https://koyu.space/img/pb-icon.svg" height="128" alt="Logo" /><span className="logo">Chat</span>
       <div className="w-full sm:w-1/2 xl:w-1/3">
         <div className="border-teal p-8 border-t-12 mb-6">

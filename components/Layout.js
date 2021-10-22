@@ -27,6 +27,8 @@ export default function Layout(props) {
 
   return (
     <main className="main flex h-screen w-screen overflow-hidden">
+      <title>koyu.space Chat</title>
+      <link rel="shortcut icon" href="https://koyu.space/favicon.ico" />
       {/* Sidebar */}
       <nav
         className="w-64 bg-gray-900 text-gray-100 overflow-scroll "
